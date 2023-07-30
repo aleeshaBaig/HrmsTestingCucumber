@@ -2,19 +2,21 @@ package Runners;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
-import org.checkerframework.checker.units.qual.C;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/resources/features/",
+        features = "src/test/resources/features/AddEmployee.feature",
         glue = "steps",
         dryRun = false,
-        monochrome = true
+        monochrome = true,
+        //tags = "@regression",
+        plugin = {"pretty","html:target/cucumber.html"}
 
 )
 
 
 
-public class RunnerClass {
+public class Regression {
 }
+

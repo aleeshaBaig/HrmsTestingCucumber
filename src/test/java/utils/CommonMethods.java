@@ -17,7 +17,7 @@ public class CommonMethods {
     public static WebDriver driver;
 
 
-    public void openBrowserAndLauchApplication(){
+    public  void openBrowserAndLauchApplication(){
         ConfigReader.readProperties(Constants.CONFIGURATION_FILEPATH);
         switch (ConfigReader.getPropertyValue("browser")){
             case "chrome":
